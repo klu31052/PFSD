@@ -1,0 +1,20 @@
+{% extends 'home.html' %}
+{% block 'b1' %}
+<h2 align="center"><font color="green"> Details availiable</font></h2>
+<table border="1" align="center">
+    <tr>
+    <thead bgcolor="lightgrey">
+    <td>id</td>
+    <td>Name</td>
+    </thead>
+    </tr>
+    {% for i in placesdata %}
+    <tr align="center">
+        <td> {{i.id}} </td>
+        <td> {{i.name}}</td>
+    </tr>
+
+    {% endfor %}
+</table>
+
+{% endblock %}
